@@ -1,4 +1,4 @@
 # Vendored Files
 
-index.html/* linguist-vendored=true
+index.html linguist-vendored=true
 css/app.css/* linguist-vendored=true
