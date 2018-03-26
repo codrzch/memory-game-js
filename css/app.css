@@ -1,0 +1,219 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND */
+body {
+  background: url('https://embed.universaluclick.com/game/jigsaw/switcher/images/patterns/bg_03.jpg');
+  font-family: 'Coda', cursive;
+}
+
+/* CONTAINER BOX */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* TITLE */
+h1 {
+    font-family: 'Impact', sans-serif;
+    font-weight: 300;
+}
+
+/* SCORE PANEL */
+
+ .score-panel {
+     text-align: left;
+     width: 400px;
+     margin-bottom: 10px;
+ }
+
+ .score-panel .stars {
+     margin: 0;
+     padding: 0;
+     display: inline-block;
+     margin: 0 10px 0 0;
+ }
+
+/* REMOVE DOTS, FORMAT STARS */
+ .score-panel .stars li {
+   list-style: none;
+   display: inline-block;
+}
+
+.timer_container li {
+  list-style: none;
+  display: inline-block;
+}
+
+/** RESTART BUTTON PLACEMENT */
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+    display: inline;
+    color: #fff8b4;
+}
+
+.moves_text {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.timer_container {
+  float: right;
+  margin-right: 10px;
+}
+
+.timer {
+  display: inline;
+}
+
+.colon_one {
+  visibility: hidden;
+}
+
+.minutes {
+  visibility: hidden;
+}
+
+.colon_two {
+  visibility: hidden;
+}
+
+.hours {
+  visibility: hidden;
+}
+
+/* MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: #ffffff;
+}
+
+  /* CONTENT OF MODAL */
+.modal_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding-left: 25%;
+    padding-right: 25%;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal_content .congratulatory_message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+.modal_content p {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.play_again_button {
+    background-color: #00B9A9;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.play_again_button:hover,
+.play_again_button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.play_again_button_container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* DECK STYLES */
+
+.deck {
+   width: 465px;
+   height: 480px;
+   background: #fffff8;
+   padding: 32px;
+   border-radius: 10px;
+   box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 0 3em;
+   overflow: hidden;
+}
+
+.deck .card {
+   height: 85px;
+   width: 85px;
+   background: #2e3d49;
+   font-size: 0px;
+   color: #ffffff;
+   border-radius: 8px;
+   border-style: ridge;
+   border-color: #e0e0e0;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+   transform: rotateY(0);
+   background: #a0d8f3;
+   cursor: default;
+   font-size: 33px;
+}
+
+.deck .card.match {
+   cursor: default;
+   background: #addfad;
+   font-size: 33px;
+}
+
+.deck .card.not-a-match {
+   cursor: default;
+   background: #e97451;
+   font-size: 33px;
+}
+
+.deck .card:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+med

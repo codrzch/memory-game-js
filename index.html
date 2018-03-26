@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Memory Game</h1>
+  </header>
+
+<br><br>
+
+  <section class="score-panel">
+
+    <!-- RATING -->
+  	<ul class="stars">
+  		<li><i class="fa fa-star" id="first-star"></i></li>
+  		<li><i class="fa fa-star" id="second-star"></i></li>
+  		<li><i class="fa fa-star" id="third-star"></i></li>
+  	</ul>
+
+    <!-- COUNTS MOVES -->
+    <span class="moves">0</span> <p class="moves_text">Moves</p>
+
+    <!-- RESTART -->
+    <div class="restart">
+  		<i class="fa fa-repeat"></i>
+  	</div>
+
+    <br><br><br>
+
+    <!-- TIMER -->
+    <div class="timer_container">
+  		<ul class="timer">
+        <li class="hours">00</li>
+        <li class="colon_one">:</li>
+        <li class="minutes">00</li>
+        <li class="colon_two">:</li>
+        <li class="seconds">0s</li>
+      </ul>
+  	</div>
+
+    <!-- MODAL -->
+    <div class="modal">
+      <div class="modal_content">
+        <p class="congratulatory_message">Congratulations, you won!</p>
+        <p class="performanceRating"></p>
+        <p class="time_taken"></p>
+        <p class="movesTaken"></p>
+
+        <div class="play_again_button_container">
+          <button class="play_again_button">Play again</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CARDS -->
+  <ul class="deck">
+    <li class="card">
+      <i class="fa fa-diamond" id="card_1"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-paper-plane-o" id="card_2"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-anchor" id="card_3"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bolt" id="card_4"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-cube" id="card_5"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-anchor" id="card_6"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-leaf" id="card_7"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bicycle" id="card_8"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-diamond" id="card_9"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bomb" id="card_10"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-leaf" id="card_11"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bomb" id="card_12"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bolt" id="card_13"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-bicycle" id="card_14"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-paper-plane-o" id="card_15"></i>
+    </li>
+    <li class="card">
+      <i class="fa fa-cube" id="card_16"></i>
+    </li>
+  </ul>
+</div>
+
+<!-- SET UP JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
